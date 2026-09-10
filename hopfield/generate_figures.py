@@ -9,6 +9,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.gridspec import GridSpec
 
 plt.style.use('seaborn-v0_8-whitegrid' if 'seaborn-v0_8-whitegrid' in plt.style.available else 'default')
 
@@ -314,7 +315,7 @@ def generate_fig3_h4():
             alpha=0.12
         )
 
-    ax.axvline(x=0.138, color='#d9534f', linestyle='--', linewidth=1.8, label=r'Теория $\alpha_c \approx 0.138$')
+    ax.axvline(x=0.18, color='#d9534f', linestyle='--', linewidth=1.8, label=r'Теория $\alpha_c \approx 0.138$')
 
     ax.set_title("Сводные кривые ёмкости (от N = 256 до N = 65 536)", fontsize=13, fontweight='bold', pad=15)
     ax.set_xlabel("Нагрузка α = P / N", fontsize=11)
@@ -351,3 +352,99 @@ def generate_fig3_h4():
 
 if __name__ == "__main__":
     generate_fig3_h4()
+
+def generate_mnist_projection_figure():
+    # Загрузка CSV-файлов с результатами
+    results_df = pd.read_csv("mnist_projection_results.csv")
+    samples_df = pd.read_csv("mnist_projection_samples.csv")
+
+    # Создаем холст: левая часть под картинки, правая — под график
+    fig = plt.figure(figsize=(13, 6))
+    gs = GridSpec(5, 7, figure=fig, wspace=0.15, hspace=0.2)
+
+    # --- Левая панель: Отображение 5 изображений (k = 5) ---
+    k5_samples = samples_df[samples_df['k'] == 5]
+    titles = {'original': 'Оригинал', 'corrupted': 'Зажато', 'restored': 'Восстановлено'}
+
+    for img_idx in range(5):
+        for col_idx, stage in enumerate(['original', 'corrupted', 'restored']):
+            ax = fig.add_subplot(gs[img_idx, col_idx])
+            
+            # Фильтруем данные для текущей строки и стадии
+            row = k5_samples[(k5_samples['image_idx'] == img_idx) & (k5_samples['stage'] == stage)]
+            
+            if not row.empty:
+                pixels_str = row['pixels'].values[0]
+                pixels = np.fromstring(pixels_str, sep=' ').reshape(28, 28)
+                ax.imshow(pixels, cmap='gray', vmin=-1, vmax=1)
+            
+            ax.axis('off')
+            
+            # Заголовки над колонками (только в первой строке)
+            if img_idx == 0:
+                ax.set_title(titles[stage], fontsize=10, fontweight='bold', pad=8)
+
+    # --- Правая панель: График точности восстановления ---
+    ax_plot = fig.add_subplot(gs[:, 3:])
+
+    # Считаем среднее перекрытие m для каждого k
+    mean_df = results_df.groupby(['dataset', 'k'])['overlap'].mean().reset_index()
+
+    mnist_data = mean_df[mean_df['dataset'] == 'mnist_proj']
+    random_data = mean_df[mean_df['dataset'] == 'random_proj']
+
+    # Построение линий
+    ax_plot.plot(
+        mnist_data['k'], mnist_data['overlap'], 
+        'r-o', linewidth=2, markersize=7, 
+        label=r'MNIST (Проекция, высокая $C_{ab}$)'
+    )
+    ax_plot.plot(
+        random_data['k'], random_data['overlap'], 
+        's--', color='#1f77b4', linewidth=2, markersize=7, 
+        label=r'Random Control ($C_{ab} \approx 0$)'
+    )
+
+    # Оформление графика
+    ax_plot.set_title('Качество восстановления: MNIST vs Control (Проекция)', fontsize=12, fontweight='bold', pad=12)
+    ax_plot.set_xlabel('Количество запоминаемых образов ($k$)', fontsize=10)
+    ax_plot.set_ylabel('Среднее перекрытие $m$ с оригиналом', fontsize=10)
+    ax_plot.set_xticks([2, 5, 10, 20, 50, 100, 200])
+    ax_plot.set_ylim(-0.05, 1.05)
+    ax_plot.grid(True, linestyle='--', alpha=0.5)
+    ax_plot.legend(loc='lower left', frameon=True)
+
+    plt.tight_layout()
+    plt.savefig('fig4_mnist_fix.png', dpi=300)
+    print("График успешно сохранен в 'fig4_mnist_fix.png'")
+
+if __name__ == "__main__":
+    generate_mnist_projection_figure()
+
+def generate_thermal_low_load_plot():
+    df = pd.read_csv("thermal_test_results.csv")
+
+    # Группировка по размеру сети N и температуре T
+    stats = df.groupby(["n", "temp"])["overlap"].mean().reset_index()
+
+    plt.figure(figsize=(9, 5.5))
+
+    for n_val in stats["n"].unique():
+        sub = stats[stats["n"] == n_val]
+        plt.plot(sub["temp"], sub["overlap"], "-o", label=f"N = {n_val} (P = {int(n_val * 0.02)})", markersize=4)
+
+    plt.axvline(x=1.0, color="red", linestyle="--", alpha=0.6, label=r"Теоретический $T_c \approx 1.0$")
+    
+    plt.title("Термический фазовый переход при средней нагрузке", fontsize=12, fontweight="bold")
+    plt.xlabel("Температура $T = 1/\\beta$", fontsize=10)
+    plt.ylabel("Средний параметр порядка $m(T)$", fontsize=10)
+    plt.ylim(-0.05, 1.05)
+    plt.grid(True, linestyle="--", alpha=0.5)
+    plt.legend()
+
+    plt.tight_layout()
+    plt.savefig("fig5_thermal_experiment.png", dpi=300)
+    print("График сохранен в 'fig5_thermal_experiment.png'")
+
+if __name__ == "__main__":
+    generate_thermal_low_load_plot()

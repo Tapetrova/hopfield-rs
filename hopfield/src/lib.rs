@@ -6,7 +6,281 @@ use rand::Rng;
 use rand::SeedableRng;
 use rand::rngs::StdRng;
 use rand::seq::SliceRandom;
+use nalgebra::DMatrix;
 
+// ---------------------------------------------------------------------
+// Дополнительно:
+// Добавление температуры в сеть
+// ---------------------------------------------------------------------
+
+
+pub fn thermal_low_load_experiment() {
+    use std::fs::File;
+    use std::io::Write;
+
+    let mut file = File::create("thermal_test_results.csv")
+        .expect("Не удалось создать CSV файл");
+    let _ = writeln!(file, "n,p,temp,seed,pattern_idx,overlap");
+
+    let n_values = vec![500, 1000]; // Различные размеры сети N
+    let alpha = 0.02;                     // Нормальная нагрузка P/N = 0.1
+    let num_seeds = 10;                  // 1 сидов на каждую конфигурацию
+    let mc_sweeps = 30;                  // Число термических обновлений (sweeps)
+
+    println!("Запуск термического эксперимента (50 сидов, сканирование T)...");
+
+    for &n in &n_values {
+        let p = (n as f64 * alpha).max(1.0) as usize; // P ≈ 0.1 * N
+
+        for seed in 0..num_seeds as u64 {
+            let states = generate_states(p, n, seed + 1000);
+            let weights = weight_matrix_calculate(&states);
+
+            // Сканирование температуры T от 0.05 до 2.00 с шагом 0.05
+            let mut temp = 0.05;
+            while temp <= 2.00 {
+                let beta = 1.0 / temp;
+
+                for (pattern_idx, pattern) in states.iter().enumerate() {
+                    let mut state = pattern.clone();
+
+                    // Релаксация с тепловым шумом
+                    for sweep in 0..mc_sweeps {
+                        thermal_neuron_fix(
+                            &mut state,
+                            &weights,
+                            beta,
+                            seed + sweep as u64 + 2000,
+                        );
+                    }
+
+                    // Подсчет итогового перекрытия m
+                    let m = calculate_overlap(&state, pattern);
+                    let _ = writeln!(
+                        file,
+                        "{},{},{:.2},{},{},{:.4}",
+                        n, p, temp, seed, pattern_idx, m
+                    );
+                }
+                temp += 0.05;
+            }
+        }
+        println!("Эксперимент для N = {} полностью завершен!", n);
+    }
+
+    file.flush().unwrap();
+    println!("Данные успешно записаны в 'thermal_test_results.csv'");
+}
+
+pub fn thermal_neuron_fix(
+    state: &mut [f64],
+    weights: &[Vec<f64>],
+    beta: f64,
+    seed: u64,
+) -> usize {
+    let n = state.len();
+    let mut rng = StdRng::seed_from_u64(seed);
+    let mut flips = 0;
+
+    for i in 0..n {
+        // 1. Вычисляем локальное поле h_i для нейрона i
+        let mut h_i = 0.0;
+        for j in 0..n {
+            h_i += weights[i][j] * state[j];
+        }
+
+        // 2. Считаем вероятность P(s_i = +1)
+        let prob_plus = 1.0 / (1.0 + (-2.0 * beta * h_i).exp());
+
+        // 3. Принимаем вероятностное решение
+        let random_val: f64 = rng.gen_range(0.0..1.0); // Случайное число в диапазоне [0.0, 1.0)
+        let new_state = if random_val < prob_plus { 1.0 } else { -1.0 };
+
+        if new_state != state[i] {
+            state[i] = new_state;
+            flips += 1;
+        }
+    }
+
+    flips
+}
+
+
+// ---------------------------------------------------------------------
+// Дополнительно:
+// MNIST фикс
+// ---------------------------------------------------------------------
+
+// Функция расчета весов по новой формуле
+pub fn projection_weight_matrix(patterns: &[Vec<f64>]) -> Vec<Vec<f64>> {
+    let p = patterns.len();       // Количество паттернов P (например, 50)
+    let n = patterns[0].len();    // Количество нейронов N (например, 784)
+
+    // Формируем матрицу Xi размера (N x P): столбцы — это образцы
+    let mut xi_data = Vec::with_capacity(n * p);
+    for i in 0..n {
+        for mu in 0..p {
+            xi_data.push(patterns[mu][i]);
+        }
+    }
+    let xi = DMatrix::from_row_slice(n, p, &xi_data);
+
+    // C = Xi^T * Xi (размер P x P)
+    let c = xi.transpose() * &xi;
+
+    // Находим обратную матрицу (P x P)
+    let c_inv = c.try_inverse()
+        .expect("Матрица Xi^T * Xi вырождена и не может быть обращена!");
+
+    // W = Xi * C_inv * Xi^T (размер N x N)
+    let w_matrix = &xi * c_inv * xi.transpose();
+
+    // Преобразуем результат обратно в Vec<Vec<f64>>
+    // Диагональ W[i][i] не обнуляется!
+    let mut result = vec![vec![0.0; n]; n];
+    for i in 0..n {
+        for j in 0..n {
+            result[i][j] = w_matrix[(i, j)];
+        }
+    }
+
+    result
+}
+
+// Функция эксперимента с измененным подсчетом весов
+pub fn mnist_projection_experiment() {
+    use std::fs::File;
+    use std::io::Write;
+
+    let k_values = vec![2, 5, 10, 20, 50, 100, 200];
+    let num_seeds = 10; // Количество запусков на каждое k
+
+    // 1. Файл с метриками точности, C_ab и оверлапами
+    let mut csv_file: File =
+        File::create("mnist_projection_results.csv").expect("Не удалось создать mnist_projection_results.csv");
+    writeln!(csv_file, "dataset,k,seed,image_idx,c_ab,overlap,success").unwrap();
+
+    // 2. Файл с пикселями картинок для визуализации
+    let mut samples_file =
+        File::create("mnist_projection_samples.csv").expect("Не удалось создать mnist_projection_samples.csv");
+    writeln!(samples_file, "k,image_idx,stage,pixels").unwrap();
+
+    // 3. Создаем маску clamping: верхняя половина заморожена (true), нижняя свободна (false)
+    let n = 784; // 28x28 пикселей
+    let mut mask = vec![false; n];
+    for i in 0..n / 2 {
+        mask[i] = true; // Зажимаем верхние 392 нейрона
+    }
+
+    for &k in &k_values {
+        for seed_idx in 0..num_seeds {
+            let seed = seed_idx + k * 100;
+
+            // --- 1. MNIST С ПРОЕКЦИОННЫМ ПРАВИЛОМ ---
+            let mnist_patterns = load_mnist_binarized(k);
+            
+            // Расчет весов через проекционное правило вместо weight_matrix_calculate
+            let weights_mnist = projection_weight_matrix(&mnist_patterns);
+            let c_ab_mnist = calculate_pairwise_overlap(&mnist_patterns);
+
+            for (img_idx, pattern) in mnist_patterns.iter().enumerate() {
+                // Искажение нижней половины
+                let mut state = corrupt_lower_half(pattern, seed as u64 + img_idx as u64);
+                let corrupted_copy = state.clone();
+
+                // Запуск восстановления с CLAMPING
+                for iter in 0..100 {
+                    let changed = neuron_fix(
+                        &mut state,
+                        &weights_mnist,
+                        seed as u64 + iter as u64 + 500,
+                        Some(&mask), // Фиксируем верхнюю половину
+                    );
+                    if changed == 0 {
+                        break;
+                    }
+                }
+
+                // Сравниваем результат с оригиналом
+                let m = calculate_overlap(&state, pattern);
+                let success = if m >= 0.95 { 1 } else { 0 };
+
+                writeln!(
+                    csv_file,
+                    "mnist_proj,{},{},{},{:.4},{:.4},{}",
+                    k, seed, img_idx, c_ab_mnist, m, success
+                )
+                .unwrap();
+
+                // Сохранение состояний для k = 5 и seed_idx = 0
+                if k == 5 && seed_idx == 0 {
+                    let orig_str: Vec<String> = pattern.iter().map(|p| p.to_string()).collect();
+                    let corr_str: Vec<String> =
+                        corrupted_copy.iter().map(|p| p.to_string()).collect();
+                    let rest_str: Vec<String> = state.iter().map(|p| p.to_string()).collect();
+
+                    writeln!(
+                        samples_file,
+                        "{},{},original,\"{}\"",
+                        k, img_idx, orig_str.join(" ")
+                    )
+                    .unwrap();
+                    writeln!(
+                        samples_file,
+                        "{},{},corrupted,\"{}\"",
+                        k, img_idx, corr_str.join(" ")
+                    )
+                    .unwrap();
+                    writeln!(
+                        samples_file,
+                        "{},{},restored,\"{}\"",
+                        k, img_idx, rest_str.join(" ")
+                    )
+                    .unwrap();
+                }
+            }
+
+            // --- 2. RANDOM CONTROL С ПРОЕКЦИОННЫМ ПРАВИЛОМ ---
+            let random_patterns = generate_states(k, 784, seed as u64);
+            
+            // Расчет весов случайного контроля через проекционное правило
+            let weights_random = projection_weight_matrix(&random_patterns);
+            let c_ab_random = calculate_pairwise_overlap(&random_patterns);
+
+            for (img_idx, pattern) in random_patterns.iter().enumerate() {
+                let mut state = corrupt_lower_half(pattern, seed as u64 + img_idx as u64);
+
+                for iter in 0..100 {
+                    let changed = neuron_fix(
+                        &mut state,
+                        &weights_random,
+                        seed as u64 + iter as u64 + 500,
+                        Some(&mask),
+                    );
+                    if changed == 0 {
+                        break;
+                    }
+                }
+
+                let m = calculate_overlap(&state, pattern);
+                let success = if m >= 0.95 { 1 } else { 0 };
+
+                writeln!(
+                    csv_file,
+                    "random_proj,{},{},{},{:.4},{:.4},{}",
+                    k, seed, img_idx, c_ab_random, m, success
+                )
+                .unwrap();
+            }
+        }
+    }
+
+    csv_file.flush().unwrap();
+    samples_file.flush().unwrap();
+
+    println!("Проекционный эксперимент успешно завершен!");
+    println!("Созданы файлы: 'mnist_projection_results.csv' и 'mnist_projection_samples.csv'.");
+}
 
 // ---------------------------------------------------------------------
 // Експеримент с рекордными замерами
