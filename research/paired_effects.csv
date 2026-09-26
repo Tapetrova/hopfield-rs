@@ -1,0 +1,9 @@
+dataset,k,mask,difference,low,high
+Fashion-MNIST,100,lower_half,0.282000,0.258000,0.306500
+Fashion-MNIST,100,random_half,0.000000,0.000000,0.000000
+Fashion-MNIST,200,lower_half,0.232250,0.211500,0.252750
+Fashion-MNIST,200,random_half,0.920000,0.910500,0.929500
+MNIST confirmation,100,lower_half,0.850500,0.829488,0.870000
+MNIST confirmation,100,random_half,0.287000,0.254987,0.321000
+MNIST confirmation,200,lower_half,0.085750,0.076250,0.095750
+MNIST confirmation,200,random_half,0.966750,0.959750,0.973506
