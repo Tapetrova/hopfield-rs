@@ -1,0 +1,661 @@
+dataset,seed,k,mask,rule,success,exact_hidden,hidden_accuracy,converged
+MNIST exploratory,0,10,lower_half,hebb,0.100000,0.000000,0.906888,1.000000
+MNIST exploratory,0,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,0,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,0,10,random_half,hebb,0.100000,0.000000,0.913010,1.000000
+MNIST exploratory,0,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,0,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,0,50,lower_half,hebb,0.060000,0.000000,0.866071,1.000000
+MNIST exploratory,0,50,lower_half,projection_diag,0.920000,0.820000,0.993061,1.000000
+MNIST exploratory,0,50,lower_half,projection_zero,1.000000,0.980000,0.999388,1.000000
+MNIST exploratory,0,50,random_half,hebb,0.060000,0.000000,0.873929,1.000000
+MNIST exploratory,0,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,0,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,0,100,lower_half,hebb,0.060000,0.000000,0.859694,1.000000
+MNIST exploratory,0,100,lower_half,projection_diag,0.060000,0.010000,0.889719,1.000000
+MNIST exploratory,0,100,lower_half,projection_zero,0.880000,0.790000,0.987372,1.000000
+MNIST exploratory,0,100,random_half,hebb,0.020000,0.000000,0.869311,1.000000
+MNIST exploratory,0,100,random_half,projection_diag,0.770000,0.190000,0.967832,1.000000
+MNIST exploratory,0,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,10,lower_half,hebb,0.200000,0.000000,0.917347,1.000000
+MNIST exploratory,1,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,10,random_half,hebb,0.100000,0.000000,0.921939,1.000000
+MNIST exploratory,1,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,50,lower_half,hebb,0.020000,0.000000,0.874541,1.000000
+MNIST exploratory,1,50,lower_half,projection_diag,0.860000,0.860000,0.989388,1.000000
+MNIST exploratory,1,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,50,random_half,hebb,0.000000,0.000000,0.879082,1.000000
+MNIST exploratory,1,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,1,100,lower_half,hebb,0.000000,0.000000,0.866939,1.000000
+MNIST exploratory,1,100,lower_half,projection_diag,0.020000,0.000000,0.872398,1.000000
+MNIST exploratory,1,100,lower_half,projection_zero,0.850000,0.830000,0.981046,1.000000
+MNIST exploratory,1,100,random_half,hebb,0.020000,0.000000,0.875893,1.000000
+MNIST exploratory,1,100,random_half,projection_diag,0.710000,0.260000,0.966811,1.000000
+MNIST exploratory,1,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,10,lower_half,hebb,0.000000,0.000000,0.874745,1.000000
+MNIST exploratory,2,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,10,random_half,hebb,0.100000,0.000000,0.883163,1.000000
+MNIST exploratory,2,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,50,lower_half,hebb,0.020000,0.000000,0.859643,1.000000
+MNIST exploratory,2,50,lower_half,projection_diag,0.880000,0.880000,0.988929,1.000000
+MNIST exploratory,2,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,50,random_half,hebb,0.020000,0.000000,0.869541,1.000000
+MNIST exploratory,2,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,2,100,lower_half,hebb,0.010000,0.000000,0.868597,1.000000
+MNIST exploratory,2,100,lower_half,projection_diag,0.030000,0.000000,0.886429,1.000000
+MNIST exploratory,2,100,lower_half,projection_zero,0.870000,0.850000,0.988393,1.000000
+MNIST exploratory,2,100,random_half,hebb,0.010000,0.000000,0.875179,1.000000
+MNIST exploratory,2,100,random_half,projection_diag,0.710000,0.210000,0.968954,1.000000
+MNIST exploratory,2,100,random_half,projection_zero,1.000000,0.990000,0.999898,1.000000
+MNIST exploratory,3,10,lower_half,hebb,0.000000,0.000000,0.885714,1.000000
+MNIST exploratory,3,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,10,random_half,hebb,0.000000,0.000000,0.893367,1.000000
+MNIST exploratory,3,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,50,lower_half,hebb,0.020000,0.000000,0.868061,1.000000
+MNIST exploratory,3,50,lower_half,projection_diag,0.900000,0.880000,0.992245,1.000000
+MNIST exploratory,3,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,50,random_half,hebb,0.020000,0.000000,0.876684,1.000000
+MNIST exploratory,3,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,3,100,lower_half,hebb,0.000000,0.000000,0.866760,1.000000
+MNIST exploratory,3,100,lower_half,projection_diag,0.040000,0.010000,0.888163,1.000000
+MNIST exploratory,3,100,lower_half,projection_zero,0.940000,0.920000,0.994362,1.000000
+MNIST exploratory,3,100,random_half,hebb,0.010000,0.000000,0.873138,1.000000
+MNIST exploratory,3,100,random_half,projection_diag,0.710000,0.360000,0.968750,1.000000
+MNIST exploratory,3,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,10,lower_half,hebb,0.000000,0.000000,0.873724,1.000000
+MNIST exploratory,4,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,10,random_half,hebb,0.000000,0.000000,0.881122,1.000000
+MNIST exploratory,4,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,50,lower_half,hebb,0.000000,0.000000,0.855714,1.000000
+MNIST exploratory,4,50,lower_half,projection_diag,1.000000,0.900000,0.996837,1.000000
+MNIST exploratory,4,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,50,random_half,hebb,0.020000,0.000000,0.870000,1.000000
+MNIST exploratory,4,50,random_half,projection_diag,1.000000,0.980000,0.999847,1.000000
+MNIST exploratory,4,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,4,100,lower_half,hebb,0.000000,0.000000,0.860561,1.000000
+MNIST exploratory,4,100,lower_half,projection_diag,0.050000,0.020000,0.886250,1.000000
+MNIST exploratory,4,100,lower_half,projection_zero,0.980000,0.970000,0.998214,1.000000
+MNIST exploratory,4,100,random_half,hebb,0.010000,0.000000,0.872730,1.000000
+MNIST exploratory,4,100,random_half,projection_diag,0.820000,0.410000,0.977219,1.000000
+MNIST exploratory,4,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,10,lower_half,hebb,0.000000,0.000000,0.885459,1.000000
+MNIST exploratory,5,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,10,random_half,hebb,0.100000,0.000000,0.902551,1.000000
+MNIST exploratory,5,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,50,lower_half,hebb,0.020000,0.000000,0.867857,1.000000
+MNIST exploratory,5,50,lower_half,projection_diag,0.980000,0.880000,0.995204,1.000000
+MNIST exploratory,5,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,50,random_half,hebb,0.020000,0.000000,0.875408,1.000000
+MNIST exploratory,5,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,5,100,lower_half,hebb,0.030000,0.000000,0.866199,1.000000
+MNIST exploratory,5,100,lower_half,projection_diag,0.020000,0.000000,0.876429,1.000000
+MNIST exploratory,5,100,lower_half,projection_zero,0.850000,0.780000,0.980689,1.000000
+MNIST exploratory,5,100,random_half,hebb,0.030000,0.000000,0.874031,1.000000
+MNIST exploratory,5,100,random_half,projection_diag,0.670000,0.110000,0.961403,1.000000
+MNIST exploratory,5,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,10,lower_half,hebb,0.000000,0.000000,0.867092,1.000000
+MNIST exploratory,6,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,10,random_half,hebb,0.100000,0.000000,0.875510,1.000000
+MNIST exploratory,6,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,50,lower_half,hebb,0.000000,0.000000,0.867194,1.000000
+MNIST exploratory,6,50,lower_half,projection_diag,0.940000,0.860000,0.991735,1.000000
+MNIST exploratory,6,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,50,random_half,hebb,0.000000,0.000000,0.878520,1.000000
+MNIST exploratory,6,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,6,100,lower_half,hebb,0.000000,0.000000,0.862781,1.000000
+MNIST exploratory,6,100,lower_half,projection_diag,0.040000,0.000000,0.894388,1.000000
+MNIST exploratory,6,100,lower_half,projection_zero,0.920000,0.920000,0.991046,1.000000
+MNIST exploratory,6,100,random_half,hebb,0.000000,0.000000,0.873240,1.000000
+MNIST exploratory,6,100,random_half,projection_diag,0.810000,0.290000,0.973189,1.000000
+MNIST exploratory,6,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,10,lower_half,hebb,0.100000,0.000000,0.871429,1.000000
+MNIST exploratory,7,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,10,random_half,hebb,0.100000,0.000000,0.885969,1.000000
+MNIST exploratory,7,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,50,lower_half,hebb,0.000000,0.000000,0.862347,1.000000
+MNIST exploratory,7,50,lower_half,projection_diag,0.980000,0.960000,0.998214,1.000000
+MNIST exploratory,7,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,50,random_half,hebb,0.000000,0.000000,0.873367,1.000000
+MNIST exploratory,7,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,7,100,lower_half,hebb,0.000000,0.000000,0.863087,1.000000
+MNIST exploratory,7,100,lower_half,projection_diag,0.060000,0.000000,0.890510,1.000000
+MNIST exploratory,7,100,lower_half,projection_zero,0.940000,0.900000,0.993699,1.000000
+MNIST exploratory,7,100,random_half,hebb,0.020000,0.000000,0.872219,1.000000
+MNIST exploratory,7,100,random_half,projection_diag,0.800000,0.260000,0.972857,1.000000
+MNIST exploratory,7,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,10,lower_half,hebb,0.100000,0.000000,0.889541,1.000000
+MNIST exploratory,8,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,10,random_half,hebb,0.200000,0.000000,0.904337,1.000000
+MNIST exploratory,8,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,50,lower_half,hebb,0.000000,0.000000,0.868571,1.000000
+MNIST exploratory,8,50,lower_half,projection_diag,0.920000,0.800000,0.988163,1.000000
+MNIST exploratory,8,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,50,random_half,hebb,0.000000,0.000000,0.879031,1.000000
+MNIST exploratory,8,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,8,100,lower_half,hebb,0.000000,0.000000,0.864107,1.000000
+MNIST exploratory,8,100,lower_half,projection_diag,0.030000,0.000000,0.887985,1.000000
+MNIST exploratory,8,100,lower_half,projection_zero,0.890000,0.850000,0.986990,1.000000
+MNIST exploratory,8,100,random_half,hebb,0.000000,0.000000,0.872347,1.000000
+MNIST exploratory,8,100,random_half,projection_diag,0.760000,0.230000,0.969617,1.000000
+MNIST exploratory,8,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,10,lower_half,hebb,0.100000,0.000000,0.872449,1.000000
+MNIST exploratory,9,10,lower_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,10,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,10,random_half,hebb,0.100000,0.000000,0.883163,1.000000
+MNIST exploratory,9,10,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,10,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,50,lower_half,hebb,0.080000,0.000000,0.865867,1.000000
+MNIST exploratory,9,50,lower_half,projection_diag,0.960000,0.940000,0.996378,1.000000
+MNIST exploratory,9,50,lower_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,50,random_half,hebb,0.040000,0.000000,0.875816,1.000000
+MNIST exploratory,9,50,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,50,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST exploratory,9,100,lower_half,hebb,0.060000,0.000000,0.863342,1.000000
+MNIST exploratory,9,100,lower_half,projection_diag,0.030000,0.000000,0.883189,1.000000
+MNIST exploratory,9,100,lower_half,projection_zero,0.870000,0.810000,0.984617,1.000000
+MNIST exploratory,9,100,random_half,hebb,0.040000,0.000000,0.872041,1.000000
+MNIST exploratory,9,100,random_half,projection_diag,0.770000,0.180000,0.968648,1.000000
+MNIST exploratory,9,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,10,100,lower_half,projection_diag,0.020000,0.000000,0.875638,1.000000
+MNIST confirmation,10,100,lower_half,projection_half,0.270000,0.130000,0.918189,1.000000
+MNIST confirmation,10,100,lower_half,projection_zero,0.840000,0.760000,0.982423,1.000000
+MNIST confirmation,10,100,random_half,projection_diag,0.750000,0.140000,0.967270,1.000000
+MNIST confirmation,10,100,random_half,projection_half,1.000000,0.980000,0.999311,1.000000
+MNIST confirmation,10,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,10,200,lower_half,projection_diag,0.000000,0.000000,0.786046,1.000000
+MNIST confirmation,10,200,lower_half,projection_half,0.000000,0.000000,0.804962,1.000000
+MNIST confirmation,10,200,lower_half,projection_zero,0.060000,0.040000,0.868393,1.000000
+MNIST confirmation,10,200,random_half,projection_diag,0.000000,0.000000,0.838278,1.000000
+MNIST confirmation,10,200,random_half,projection_half,0.000000,0.000000,0.880306,1.000000
+MNIST confirmation,10,200,random_half,projection_zero,0.965000,0.935000,0.996224,1.000000
+MNIST confirmation,11,100,lower_half,projection_diag,0.070000,0.000000,0.895306,1.000000
+MNIST confirmation,11,100,lower_half,projection_half,0.430000,0.250000,0.939235,1.000000
+MNIST confirmation,11,100,lower_half,projection_zero,0.950000,0.920000,0.994821,1.000000
+MNIST confirmation,11,100,random_half,projection_diag,0.590000,0.150000,0.959490,1.000000
+MNIST confirmation,11,100,random_half,projection_half,0.970000,0.900000,0.996582,1.000000
+MNIST confirmation,11,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,11,200,lower_half,projection_diag,0.000000,0.000000,0.791390,1.000000
+MNIST confirmation,11,200,lower_half,projection_half,0.000000,0.000000,0.812921,1.000000
+MNIST confirmation,11,200,lower_half,projection_zero,0.090000,0.060000,0.872997,1.000000
+MNIST confirmation,11,200,random_half,projection_diag,0.000000,0.000000,0.835281,1.000000
+MNIST confirmation,11,200,random_half,projection_half,0.000000,0.000000,0.878852,1.000000
+MNIST confirmation,11,200,random_half,projection_zero,0.970000,0.935000,0.996569,1.000000
+MNIST confirmation,12,100,lower_half,projection_diag,0.060000,0.010000,0.890051,1.000000
+MNIST confirmation,12,100,lower_half,projection_half,0.430000,0.200000,0.940102,1.000000
+MNIST confirmation,12,100,lower_half,projection_zero,0.870000,0.740000,0.984031,1.000000
+MNIST confirmation,12,100,random_half,projection_diag,0.800000,0.240000,0.970969,1.000000
+MNIST confirmation,12,100,random_half,projection_half,1.000000,0.990000,0.999847,1.000000
+MNIST confirmation,12,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,12,200,lower_half,projection_diag,0.000000,0.000000,0.786454,1.000000
+MNIST confirmation,12,200,lower_half,projection_half,0.000000,0.000000,0.812092,1.000000
+MNIST confirmation,12,200,lower_half,projection_zero,0.100000,0.060000,0.879171,1.000000
+MNIST confirmation,12,200,random_half,projection_diag,0.000000,0.000000,0.836046,1.000000
+MNIST confirmation,12,200,random_half,projection_half,0.000000,0.000000,0.881250,1.000000
+MNIST confirmation,12,200,random_half,projection_zero,0.980000,0.930000,0.997360,1.000000
+MNIST confirmation,13,100,lower_half,projection_diag,0.100000,0.000000,0.895026,1.000000
+MNIST confirmation,13,100,lower_half,projection_half,0.420000,0.280000,0.936709,1.000000
+MNIST confirmation,13,100,lower_half,projection_zero,0.880000,0.790000,0.985561,1.000000
+MNIST confirmation,13,100,random_half,projection_diag,0.770000,0.160000,0.967168,1.000000
+MNIST confirmation,13,100,random_half,projection_half,1.000000,0.880000,0.997755,1.000000
+MNIST confirmation,13,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,13,200,lower_half,projection_diag,0.000000,0.000000,0.788023,1.000000
+MNIST confirmation,13,200,lower_half,projection_half,0.000000,0.000000,0.810293,1.000000
+MNIST confirmation,13,200,lower_half,projection_zero,0.090000,0.035000,0.869936,1.000000
+MNIST confirmation,13,200,random_half,projection_diag,0.000000,0.000000,0.841352,1.000000
+MNIST confirmation,13,200,random_half,projection_half,0.000000,0.000000,0.884528,1.000000
+MNIST confirmation,13,200,random_half,projection_zero,0.965000,0.915000,0.996735,1.000000
+MNIST confirmation,14,100,lower_half,projection_diag,0.060000,0.010000,0.878010,1.000000
+MNIST confirmation,14,100,lower_half,projection_half,0.290000,0.190000,0.921071,1.000000
+MNIST confirmation,14,100,lower_half,projection_zero,0.870000,0.820000,0.986250,1.000000
+MNIST confirmation,14,100,random_half,projection_diag,0.640000,0.190000,0.963189,1.000000
+MNIST confirmation,14,100,random_half,projection_half,1.000000,0.960000,0.999158,1.000000
+MNIST confirmation,14,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,14,200,lower_half,projection_diag,0.000000,0.000000,0.782028,1.000000
+MNIST confirmation,14,200,lower_half,projection_half,0.000000,0.000000,0.801033,1.000000
+MNIST confirmation,14,200,lower_half,projection_zero,0.035000,0.025000,0.852347,1.000000
+MNIST confirmation,14,200,random_half,projection_diag,0.000000,0.000000,0.829541,1.000000
+MNIST confirmation,14,200,random_half,projection_half,0.000000,0.000000,0.873112,1.000000
+MNIST confirmation,14,200,random_half,projection_zero,0.935000,0.880000,0.993597,1.000000
+MNIST confirmation,15,100,lower_half,projection_diag,0.020000,0.000000,0.889617,1.000000
+MNIST confirmation,15,100,lower_half,projection_half,0.350000,0.110000,0.928138,1.000000
+MNIST confirmation,15,100,lower_half,projection_zero,0.890000,0.860000,0.986862,1.000000
+MNIST confirmation,15,100,random_half,projection_diag,0.680000,0.300000,0.967883,1.000000
+MNIST confirmation,15,100,random_half,projection_half,1.000000,0.990000,0.999898,1.000000
+MNIST confirmation,15,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,15,200,lower_half,projection_diag,0.000000,0.000000,0.790383,1.000000
+MNIST confirmation,15,200,lower_half,projection_half,0.000000,0.000000,0.812717,1.000000
+MNIST confirmation,15,200,lower_half,projection_zero,0.100000,0.045000,0.875000,1.000000
+MNIST confirmation,15,200,random_half,projection_diag,0.000000,0.000000,0.837385,1.000000
+MNIST confirmation,15,200,random_half,projection_half,0.005000,0.000000,0.881633,1.000000
+MNIST confirmation,15,200,random_half,projection_zero,0.975000,0.940000,0.996875,1.000000
+MNIST confirmation,16,100,lower_half,projection_diag,0.060000,0.000000,0.894719,1.000000
+MNIST confirmation,16,100,lower_half,projection_half,0.390000,0.160000,0.936633,1.000000
+MNIST confirmation,16,100,lower_half,projection_zero,0.960000,0.840000,0.992781,1.000000
+MNIST confirmation,16,100,random_half,projection_diag,0.720000,0.120000,0.964643,1.000000
+MNIST confirmation,16,100,random_half,projection_half,0.990000,0.880000,0.996837,1.000000
+MNIST confirmation,16,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,16,200,lower_half,projection_diag,0.000000,0.000000,0.789745,1.000000
+MNIST confirmation,16,200,lower_half,projection_half,0.000000,0.000000,0.809974,1.000000
+MNIST confirmation,16,200,lower_half,projection_zero,0.080000,0.040000,0.871122,1.000000
+MNIST confirmation,16,200,random_half,projection_diag,0.000000,0.000000,0.835765,1.000000
+MNIST confirmation,16,200,random_half,projection_half,0.000000,0.000000,0.879617,1.000000
+MNIST confirmation,16,200,random_half,projection_zero,0.945000,0.905000,0.995013,1.000000
+MNIST confirmation,17,100,lower_half,projection_diag,0.050000,0.000000,0.888801,1.000000
+MNIST confirmation,17,100,lower_half,projection_half,0.270000,0.150000,0.927679,1.000000
+MNIST confirmation,17,100,lower_half,projection_zero,0.930000,0.890000,0.990485,1.000000
+MNIST confirmation,17,100,random_half,projection_diag,0.620000,0.210000,0.961097,1.000000
+MNIST confirmation,17,100,random_half,projection_half,1.000000,0.960000,0.999056,1.000000
+MNIST confirmation,17,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,17,200,lower_half,projection_diag,0.000000,0.000000,0.787691,1.000000
+MNIST confirmation,17,200,lower_half,projection_half,0.000000,0.000000,0.809783,1.000000
+MNIST confirmation,17,200,lower_half,projection_zero,0.085000,0.045000,0.873661,1.000000
+MNIST confirmation,17,200,random_half,projection_diag,0.000000,0.000000,0.837232,1.000000
+MNIST confirmation,17,200,random_half,projection_half,0.000000,0.000000,0.880612,1.000000
+MNIST confirmation,17,200,random_half,projection_zero,0.955000,0.890000,0.995421,1.000000
+MNIST confirmation,18,100,lower_half,projection_diag,0.020000,0.000000,0.877066,1.000000
+MNIST confirmation,18,100,lower_half,projection_half,0.300000,0.120000,0.922653,1.000000
+MNIST confirmation,18,100,lower_half,projection_zero,0.900000,0.860000,0.987704,1.000000
+MNIST confirmation,18,100,random_half,projection_diag,0.680000,0.270000,0.968673,1.000000
+MNIST confirmation,18,100,random_half,projection_half,1.000000,0.940000,0.998903,1.000000
+MNIST confirmation,18,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,18,200,lower_half,projection_diag,0.000000,0.000000,0.778469,1.000000
+MNIST confirmation,18,200,lower_half,projection_half,0.000000,0.000000,0.798980,1.000000
+MNIST confirmation,18,200,lower_half,projection_zero,0.085000,0.055000,0.867066,1.000000
+MNIST confirmation,18,200,random_half,projection_diag,0.000000,0.000000,0.834209,1.000000
+MNIST confirmation,18,200,random_half,projection_half,0.005000,0.000000,0.881620,1.000000
+MNIST confirmation,18,200,random_half,projection_zero,0.985000,0.965000,0.998265,1.000000
+MNIST confirmation,19,100,lower_half,projection_diag,0.080000,0.020000,0.895408,1.000000
+MNIST confirmation,19,100,lower_half,projection_half,0.470000,0.200000,0.945969,1.000000
+MNIST confirmation,19,100,lower_half,projection_zero,0.950000,0.920000,0.994005,1.000000
+MNIST confirmation,19,100,random_half,projection_diag,0.750000,0.260000,0.969286,1.000000
+MNIST confirmation,19,100,random_half,projection_half,0.990000,0.930000,0.997679,1.000000
+MNIST confirmation,19,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,19,200,lower_half,projection_diag,0.000000,0.000000,0.785179,1.000000
+MNIST confirmation,19,200,lower_half,projection_half,0.000000,0.000000,0.808253,1.000000
+MNIST confirmation,19,200,lower_half,projection_zero,0.080000,0.040000,0.867844,1.000000
+MNIST confirmation,19,200,random_half,projection_diag,0.000000,0.000000,0.834949,1.000000
+MNIST confirmation,19,200,random_half,projection_half,0.000000,0.000000,0.881594,1.000000
+MNIST confirmation,19,200,random_half,projection_zero,0.965000,0.925000,0.996352,1.000000
+MNIST confirmation,20,100,lower_half,projection_diag,0.090000,0.020000,0.889745,1.000000
+MNIST confirmation,20,100,lower_half,projection_half,0.340000,0.210000,0.932372,1.000000
+MNIST confirmation,20,100,lower_half,projection_zero,0.920000,0.850000,0.992679,1.000000
+MNIST confirmation,20,100,random_half,projection_diag,0.800000,0.230000,0.970740,1.000000
+MNIST confirmation,20,100,random_half,projection_half,1.000000,0.960000,0.999260,1.000000
+MNIST confirmation,20,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,20,200,lower_half,projection_diag,0.000000,0.000000,0.785855,1.000000
+MNIST confirmation,20,200,lower_half,projection_half,0.000000,0.000000,0.808699,1.000000
+MNIST confirmation,20,200,lower_half,projection_zero,0.065000,0.035000,0.872143,1.000000
+MNIST confirmation,20,200,random_half,projection_diag,0.000000,0.000000,0.833240,1.000000
+MNIST confirmation,20,200,random_half,projection_half,0.005000,0.000000,0.880319,1.000000
+MNIST confirmation,20,200,random_half,projection_zero,0.980000,0.925000,0.997296,1.000000
+MNIST confirmation,21,100,lower_half,projection_diag,0.030000,0.000000,0.898214,1.000000
+MNIST confirmation,21,100,lower_half,projection_half,0.470000,0.210000,0.941786,1.000000
+MNIST confirmation,21,100,lower_half,projection_zero,0.930000,0.910000,0.992551,1.000000
+MNIST confirmation,21,100,random_half,projection_diag,0.740000,0.250000,0.967653,1.000000
+MNIST confirmation,21,100,random_half,projection_half,1.000000,0.960000,0.999362,1.000000
+MNIST confirmation,21,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,21,200,lower_half,projection_diag,0.000000,0.000000,0.788176,1.000000
+MNIST confirmation,21,200,lower_half,projection_half,0.000000,0.000000,0.812181,1.000000
+MNIST confirmation,21,200,lower_half,projection_zero,0.140000,0.080000,0.879872,1.000000
+MNIST confirmation,21,200,random_half,projection_diag,0.000000,0.000000,0.835829,1.000000
+MNIST confirmation,21,200,random_half,projection_half,0.005000,0.000000,0.881250,1.000000
+MNIST confirmation,21,200,random_half,projection_zero,0.965000,0.885000,0.995804,1.000000
+MNIST confirmation,22,100,lower_half,projection_diag,0.100000,0.010000,0.898571,1.000000
+MNIST confirmation,22,100,lower_half,projection_half,0.460000,0.250000,0.942015,1.000000
+MNIST confirmation,22,100,lower_half,projection_zero,0.950000,0.850000,0.992832,1.000000
+MNIST confirmation,22,100,random_half,projection_diag,0.670000,0.170000,0.963980,1.000000
+MNIST confirmation,22,100,random_half,projection_half,1.000000,0.910000,0.998163,1.000000
+MNIST confirmation,22,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,22,200,lower_half,projection_diag,0.000000,0.000000,0.792079,1.000000
+MNIST confirmation,22,200,lower_half,projection_half,0.000000,0.000000,0.814694,1.000000
+MNIST confirmation,22,200,lower_half,projection_zero,0.095000,0.075000,0.873380,1.000000
+MNIST confirmation,22,200,random_half,projection_diag,0.000000,0.000000,0.834668,1.000000
+MNIST confirmation,22,200,random_half,projection_half,0.000000,0.000000,0.876097,1.000000
+MNIST confirmation,22,200,random_half,projection_zero,0.965000,0.920000,0.996875,1.000000
+MNIST confirmation,23,100,lower_half,projection_diag,0.030000,0.000000,0.880408,1.000000
+MNIST confirmation,23,100,lower_half,projection_half,0.300000,0.140000,0.926352,1.000000
+MNIST confirmation,23,100,lower_half,projection_zero,0.900000,0.860000,0.991480,1.000000
+MNIST confirmation,23,100,random_half,projection_diag,0.740000,0.370000,0.971020,1.000000
+MNIST confirmation,23,100,random_half,projection_half,1.000000,0.960000,0.999107,1.000000
+MNIST confirmation,23,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,23,200,lower_half,projection_diag,0.000000,0.000000,0.783355,1.000000
+MNIST confirmation,23,200,lower_half,projection_half,0.000000,0.000000,0.807168,1.000000
+MNIST confirmation,23,200,lower_half,projection_zero,0.075000,0.050000,0.864809,1.000000
+MNIST confirmation,23,200,random_half,projection_diag,0.000000,0.000000,0.836033,1.000000
+MNIST confirmation,23,200,random_half,projection_half,0.005000,0.000000,0.881327,1.000000
+MNIST confirmation,23,200,random_half,projection_zero,0.960000,0.930000,0.996033,1.000000
+MNIST confirmation,24,100,lower_half,projection_diag,0.030000,0.000000,0.887168,1.000000
+MNIST confirmation,24,100,lower_half,projection_half,0.340000,0.140000,0.928240,1.000000
+MNIST confirmation,24,100,lower_half,projection_zero,0.910000,0.830000,0.989694,1.000000
+MNIST confirmation,24,100,random_half,projection_diag,0.620000,0.200000,0.962526,1.000000
+MNIST confirmation,24,100,random_half,projection_half,1.000000,0.910000,0.997857,1.000000
+MNIST confirmation,24,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,24,200,lower_half,projection_diag,0.000000,0.000000,0.790383,1.000000
+MNIST confirmation,24,200,lower_half,projection_half,0.000000,0.000000,0.809974,1.000000
+MNIST confirmation,24,200,lower_half,projection_zero,0.070000,0.040000,0.870038,1.000000
+MNIST confirmation,24,200,random_half,projection_diag,0.000000,0.000000,0.831480,1.000000
+MNIST confirmation,24,200,random_half,projection_half,0.000000,0.000000,0.873967,1.000000
+MNIST confirmation,24,200,random_half,projection_zero,0.945000,0.905000,0.994974,1.000000
+MNIST confirmation,25,100,lower_half,projection_diag,0.070000,0.010000,0.892143,1.000000
+MNIST confirmation,25,100,lower_half,projection_half,0.360000,0.150000,0.931454,1.000000
+MNIST confirmation,25,100,lower_half,projection_zero,0.910000,0.890000,0.988520,1.000000
+MNIST confirmation,25,100,random_half,projection_diag,0.830000,0.280000,0.972423,1.000000
+MNIST confirmation,25,100,random_half,projection_half,1.000000,0.970000,0.999439,1.000000
+MNIST confirmation,25,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,25,200,lower_half,projection_diag,0.000000,0.000000,0.787462,1.000000
+MNIST confirmation,25,200,lower_half,projection_half,0.000000,0.000000,0.810357,1.000000
+MNIST confirmation,25,200,lower_half,projection_zero,0.125000,0.065000,0.879401,1.000000
+MNIST confirmation,25,200,random_half,projection_diag,0.000000,0.000000,0.835230,1.000000
+MNIST confirmation,25,200,random_half,projection_half,0.005000,0.000000,0.880026,1.000000
+MNIST confirmation,25,200,random_half,projection_zero,0.970000,0.940000,0.997258,1.000000
+MNIST confirmation,26,100,lower_half,projection_diag,0.050000,0.000000,0.883495,1.000000
+MNIST confirmation,26,100,lower_half,projection_half,0.340000,0.150000,0.927117,1.000000
+MNIST confirmation,26,100,lower_half,projection_zero,0.910000,0.870000,0.990867,1.000000
+MNIST confirmation,26,100,random_half,projection_diag,0.790000,0.210000,0.970867,1.000000
+MNIST confirmation,26,100,random_half,projection_half,1.000000,0.940000,0.999337,1.000000
+MNIST confirmation,26,100,random_half,projection_zero,1.000000,0.990000,0.999821,1.000000
+MNIST confirmation,26,200,lower_half,projection_diag,0.000000,0.000000,0.782819,1.000000
+MNIST confirmation,26,200,lower_half,projection_half,0.000000,0.000000,0.804860,1.000000
+MNIST confirmation,26,200,lower_half,projection_zero,0.065000,0.040000,0.868635,1.000000
+MNIST confirmation,26,200,random_half,projection_diag,0.000000,0.000000,0.834821,1.000000
+MNIST confirmation,26,200,random_half,projection_half,0.000000,0.000000,0.883865,1.000000
+MNIST confirmation,26,200,random_half,projection_zero,0.990000,0.920000,0.998367,1.000000
+MNIST confirmation,27,100,lower_half,projection_diag,0.040000,0.010000,0.881071,1.000000
+MNIST confirmation,27,100,lower_half,projection_half,0.350000,0.200000,0.928367,1.000000
+MNIST confirmation,27,100,lower_half,projection_zero,0.970000,0.930000,0.995434,1.000000
+MNIST confirmation,27,100,random_half,projection_diag,0.740000,0.340000,0.971224,1.000000
+MNIST confirmation,27,100,random_half,projection_half,1.000000,0.980000,0.999541,1.000000
+MNIST confirmation,27,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,27,200,lower_half,projection_diag,0.000000,0.000000,0.787538,1.000000
+MNIST confirmation,27,200,lower_half,projection_half,0.000000,0.000000,0.808469,1.000000
+MNIST confirmation,27,200,lower_half,projection_zero,0.095000,0.060000,0.872793,1.000000
+MNIST confirmation,27,200,random_half,projection_diag,0.000000,0.000000,0.832895,1.000000
+MNIST confirmation,27,200,random_half,projection_half,0.000000,0.000000,0.881020,1.000000
+MNIST confirmation,27,200,random_half,projection_zero,0.985000,0.950000,0.997398,1.000000
+MNIST confirmation,28,100,lower_half,projection_diag,0.040000,0.000000,0.878929,1.000000
+MNIST confirmation,28,100,lower_half,projection_half,0.250000,0.140000,0.916250,1.000000
+MNIST confirmation,28,100,lower_half,projection_zero,0.760000,0.720000,0.973087,1.000000
+MNIST confirmation,28,100,random_half,projection_diag,0.550000,0.140000,0.956607,1.000000
+MNIST confirmation,28,100,random_half,projection_half,0.980000,0.920000,0.997449,1.000000
+MNIST confirmation,28,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,28,200,lower_half,projection_diag,0.000000,0.000000,0.787423,1.000000
+MNIST confirmation,28,200,lower_half,projection_half,0.000000,0.000000,0.807321,1.000000
+MNIST confirmation,28,200,lower_half,projection_zero,0.075000,0.040000,0.869209,1.000000
+MNIST confirmation,28,200,random_half,projection_diag,0.000000,0.000000,0.836684,1.000000
+MNIST confirmation,28,200,random_half,projection_half,0.005000,0.000000,0.880880,1.000000
+MNIST confirmation,28,200,random_half,projection_zero,0.940000,0.850000,0.993265,1.000000
+MNIST confirmation,29,100,lower_half,projection_diag,0.040000,0.000000,0.886327,1.000000
+MNIST confirmation,29,100,lower_half,projection_half,0.350000,0.220000,0.927781,1.000000
+MNIST confirmation,29,100,lower_half,projection_zero,0.870000,0.860000,0.986862,1.000000
+MNIST confirmation,29,100,random_half,projection_diag,0.780000,0.250000,0.972168,1.000000
+MNIST confirmation,29,100,random_half,projection_half,0.990000,0.960000,0.999005,1.000000
+MNIST confirmation,29,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+MNIST confirmation,29,200,lower_half,projection_diag,0.000000,0.000000,0.780026,1.000000
+MNIST confirmation,29,200,lower_half,projection_half,0.000000,0.000000,0.803495,1.000000
+MNIST confirmation,29,200,lower_half,projection_zero,0.105000,0.050000,0.865153,1.000000
+MNIST confirmation,29,200,random_half,projection_diag,0.000000,0.000000,0.839018,1.000000
+MNIST confirmation,29,200,random_half,projection_half,0.000000,0.000000,0.883367,1.000000
+MNIST confirmation,29,200,random_half,projection_zero,0.995000,0.970000,0.998929,1.000000
+Fashion-MNIST,10,100,lower_half,projection_diag,0.280000,0.210000,0.864541,1.000000
+Fashion-MNIST,10,100,lower_half,projection_half,0.450000,0.390000,0.909923,1.000000
+Fashion-MNIST,10,100,lower_half,projection_zero,0.550000,0.480000,0.938801,1.000000
+Fashion-MNIST,10,100,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,10,100,random_half,projection_half,1.000000,0.990000,0.999872,1.000000
+Fashion-MNIST,10,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,10,200,lower_half,projection_diag,0.000000,0.000000,0.665727,1.000000
+Fashion-MNIST,10,200,lower_half,projection_half,0.010000,0.000000,0.709694,1.000000
+Fashion-MNIST,10,200,lower_half,projection_zero,0.240000,0.160000,0.831429,1.000000
+Fashion-MNIST,10,200,random_half,projection_diag,0.045000,0.000000,0.878929,1.000000
+Fashion-MNIST,10,200,random_half,projection_half,0.965000,0.745000,0.993240,1.000000
+Fashion-MNIST,10,200,random_half,projection_zero,1.000000,0.985000,0.999758,1.000000
+Fashion-MNIST,11,100,lower_half,projection_diag,0.430000,0.300000,0.889107,1.000000
+Fashion-MNIST,11,100,lower_half,projection_half,0.560000,0.520000,0.922781,1.000000
+Fashion-MNIST,11,100,lower_half,projection_zero,0.670000,0.650000,0.954694,1.000000
+Fashion-MNIST,11,100,random_half,projection_diag,1.000000,0.990000,0.999796,1.000000
+Fashion-MNIST,11,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,11,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,11,200,lower_half,projection_diag,0.000000,0.000000,0.664362,1.000000
+Fashion-MNIST,11,200,lower_half,projection_half,0.010000,0.000000,0.710421,1.000000
+Fashion-MNIST,11,200,lower_half,projection_zero,0.210000,0.100000,0.821594,1.000000
+Fashion-MNIST,11,200,random_half,projection_diag,0.055000,0.000000,0.881467,1.000000
+Fashion-MNIST,11,200,random_half,projection_half,0.950000,0.685000,0.992372,1.000000
+Fashion-MNIST,11,200,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,12,100,lower_half,projection_diag,0.460000,0.360000,0.885128,1.000000
+Fashion-MNIST,12,100,lower_half,projection_half,0.570000,0.520000,0.914031,1.000000
+Fashion-MNIST,12,100,lower_half,projection_zero,0.730000,0.720000,0.953418,1.000000
+Fashion-MNIST,12,100,random_half,projection_diag,1.000000,0.990000,0.999668,1.000000
+Fashion-MNIST,12,100,random_half,projection_half,1.000000,0.990000,0.999668,1.000000
+Fashion-MNIST,12,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,12,200,lower_half,projection_diag,0.000000,0.000000,0.652283,1.000000
+Fashion-MNIST,12,200,lower_half,projection_half,0.000000,0.000000,0.691492,1.000000
+Fashion-MNIST,12,200,lower_half,projection_zero,0.330000,0.200000,0.834247,1.000000
+Fashion-MNIST,12,200,random_half,projection_diag,0.070000,0.000000,0.888622,1.000000
+Fashion-MNIST,12,200,random_half,projection_half,0.980000,0.820000,0.995561,1.000000
+Fashion-MNIST,12,200,random_half,projection_zero,1.000000,0.985000,0.999758,1.000000
+Fashion-MNIST,13,100,lower_half,projection_diag,0.380000,0.330000,0.875740,1.000000
+Fashion-MNIST,13,100,lower_half,projection_half,0.500000,0.460000,0.912526,1.000000
+Fashion-MNIST,13,100,lower_half,projection_zero,0.630000,0.630000,0.942372,1.000000
+Fashion-MNIST,13,100,random_half,projection_diag,1.000000,0.870000,0.998597,1.000000
+Fashion-MNIST,13,100,random_half,projection_half,1.000000,0.920000,0.999056,1.000000
+Fashion-MNIST,13,100,random_half,projection_zero,1.000000,0.940000,0.999286,1.000000
+Fashion-MNIST,13,200,lower_half,projection_diag,0.000000,0.000000,0.652997,1.000000
+Fashion-MNIST,13,200,lower_half,projection_half,0.005000,0.000000,0.688355,1.000000
+Fashion-MNIST,13,200,lower_half,projection_zero,0.205000,0.180000,0.813546,1.000000
+Fashion-MNIST,13,200,random_half,projection_diag,0.085000,0.010000,0.883852,1.000000
+Fashion-MNIST,13,200,random_half,projection_half,0.975000,0.715000,0.993648,1.000000
+Fashion-MNIST,13,200,random_half,projection_zero,1.000000,0.925000,0.999056,1.000000
+Fashion-MNIST,14,100,lower_half,projection_diag,0.410000,0.400000,0.882704,1.000000
+Fashion-MNIST,14,100,lower_half,projection_half,0.590000,0.580000,0.923546,1.000000
+Fashion-MNIST,14,100,lower_half,projection_zero,0.710000,0.690000,0.952270,1.000000
+Fashion-MNIST,14,100,random_half,projection_diag,1.000000,0.990000,0.999898,1.000000
+Fashion-MNIST,14,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,14,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,14,200,lower_half,projection_diag,0.000000,0.000000,0.662972,1.000000
+Fashion-MNIST,14,200,lower_half,projection_half,0.015000,0.010000,0.706990,1.000000
+Fashion-MNIST,14,200,lower_half,projection_zero,0.250000,0.185000,0.824056,1.000000
+Fashion-MNIST,14,200,random_half,projection_diag,0.090000,0.005000,0.887003,1.000000
+Fashion-MNIST,14,200,random_half,projection_half,0.965000,0.650000,0.992666,1.000000
+Fashion-MNIST,14,200,random_half,projection_zero,1.000000,0.975000,0.999605,1.000000
+Fashion-MNIST,15,100,lower_half,projection_diag,0.400000,0.310000,0.875561,1.000000
+Fashion-MNIST,15,100,lower_half,projection_half,0.500000,0.420000,0.898214,1.000000
+Fashion-MNIST,15,100,lower_half,projection_zero,0.640000,0.610000,0.924056,1.000000
+Fashion-MNIST,15,100,random_half,projection_diag,1.000000,0.920000,0.998750,1.000000
+Fashion-MNIST,15,100,random_half,projection_half,1.000000,0.970000,0.999362,1.000000
+Fashion-MNIST,15,100,random_half,projection_zero,1.000000,0.990000,0.999821,1.000000
+Fashion-MNIST,15,200,lower_half,projection_diag,0.000000,0.000000,0.655510,1.000000
+Fashion-MNIST,15,200,lower_half,projection_half,0.010000,0.005000,0.696084,1.000000
+Fashion-MNIST,15,200,lower_half,projection_zero,0.220000,0.130000,0.815791,1.000000
+Fashion-MNIST,15,200,random_half,projection_diag,0.110000,0.005000,0.892309,1.000000
+Fashion-MNIST,15,200,random_half,projection_half,0.965000,0.700000,0.993776,1.000000
+Fashion-MNIST,15,200,random_half,projection_zero,1.000000,0.920000,0.999031,1.000000
+Fashion-MNIST,16,100,lower_half,projection_diag,0.350000,0.310000,0.870485,1.000000
+Fashion-MNIST,16,100,lower_half,projection_half,0.480000,0.430000,0.905536,1.000000
+Fashion-MNIST,16,100,lower_half,projection_zero,0.540000,0.530000,0.924235,1.000000
+Fashion-MNIST,16,100,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,16,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,16,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,16,200,lower_half,projection_diag,0.000000,0.000000,0.654349,1.000000
+Fashion-MNIST,16,200,lower_half,projection_half,0.005000,0.005000,0.696454,1.000000
+Fashion-MNIST,16,200,lower_half,projection_zero,0.230000,0.210000,0.823737,1.000000
+Fashion-MNIST,16,200,random_half,projection_diag,0.110000,0.025000,0.892806,1.000000
+Fashion-MNIST,16,200,random_half,projection_half,1.000000,0.865000,0.997526,1.000000
+Fashion-MNIST,16,200,random_half,projection_zero,1.000000,0.995000,0.999847,1.000000
+Fashion-MNIST,17,100,lower_half,projection_diag,0.350000,0.290000,0.888316,1.000000
+Fashion-MNIST,17,100,lower_half,projection_half,0.550000,0.480000,0.932423,1.000000
+Fashion-MNIST,17,100,lower_half,projection_zero,0.680000,0.640000,0.948827,1.000000
+Fashion-MNIST,17,100,random_half,projection_diag,1.000000,0.970000,0.999541,1.000000
+Fashion-MNIST,17,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,17,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,17,200,lower_half,projection_diag,0.000000,0.000000,0.658202,1.000000
+Fashion-MNIST,17,200,lower_half,projection_half,0.005000,0.000000,0.693010,1.000000
+Fashion-MNIST,17,200,lower_half,projection_zero,0.140000,0.110000,0.804311,1.000000
+Fashion-MNIST,17,200,random_half,projection_diag,0.060000,0.000000,0.878291,1.000000
+Fashion-MNIST,17,200,random_half,projection_half,0.980000,0.800000,0.995306,1.000000
+Fashion-MNIST,17,200,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,18,100,lower_half,projection_diag,0.380000,0.330000,0.880255,1.000000
+Fashion-MNIST,18,100,lower_half,projection_half,0.590000,0.520000,0.927449,1.000000
+Fashion-MNIST,18,100,lower_half,projection_zero,0.750000,0.750000,0.953291,1.000000
+Fashion-MNIST,18,100,random_half,projection_diag,1.000000,0.970000,0.999592,1.000000
+Fashion-MNIST,18,100,random_half,projection_half,0.990000,0.980000,0.999337,1.000000
+Fashion-MNIST,18,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,18,200,lower_half,projection_diag,0.000000,0.000000,0.670663,1.000000
+Fashion-MNIST,18,200,lower_half,projection_half,0.000000,0.000000,0.712832,1.000000
+Fashion-MNIST,18,200,lower_half,projection_zero,0.265000,0.195000,0.833712,1.000000
+Fashion-MNIST,18,200,random_half,projection_diag,0.055000,0.000000,0.885357,1.000000
+Fashion-MNIST,18,200,random_half,projection_half,0.975000,0.715000,0.993699,1.000000
+Fashion-MNIST,18,200,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,19,100,lower_half,projection_diag,0.430000,0.280000,0.886097,1.000000
+Fashion-MNIST,19,100,lower_half,projection_half,0.570000,0.430000,0.918036,1.000000
+Fashion-MNIST,19,100,lower_half,projection_zero,0.710000,0.560000,0.952245,1.000000
+Fashion-MNIST,19,100,random_half,projection_diag,1.000000,0.980000,0.999668,1.000000
+Fashion-MNIST,19,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,19,100,random_half,projection_zero,1.000000,0.990000,0.999745,1.000000
+Fashion-MNIST,19,200,lower_half,projection_diag,0.000000,0.000000,0.663597,1.000000
+Fashion-MNIST,19,200,lower_half,projection_half,0.010000,0.000000,0.703151,1.000000
+Fashion-MNIST,19,200,lower_half,projection_zero,0.280000,0.160000,0.839898,1.000000
+Fashion-MNIST,19,200,random_half,projection_diag,0.115000,0.010000,0.893878,1.000000
+Fashion-MNIST,19,200,random_half,projection_half,0.980000,0.795000,0.995523,1.000000
+Fashion-MNIST,19,200,random_half,projection_zero,1.000000,0.990000,0.999796,1.000000
+Fashion-MNIST,20,100,lower_half,projection_diag,0.380000,0.350000,0.894617,1.000000
+Fashion-MNIST,20,100,lower_half,projection_half,0.560000,0.560000,0.931837,1.000000
+Fashion-MNIST,20,100,lower_half,projection_zero,0.720000,0.720000,0.960714,1.000000
+Fashion-MNIST,20,100,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,20,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,20,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,20,200,lower_half,projection_diag,0.000000,0.000000,0.665242,1.000000
+Fashion-MNIST,20,200,lower_half,projection_half,0.005000,0.000000,0.710166,1.000000
+Fashion-MNIST,20,200,lower_half,projection_zero,0.235000,0.200000,0.833610,1.000000
+Fashion-MNIST,20,200,random_half,projection_diag,0.105000,0.005000,0.889260,1.000000
+Fashion-MNIST,20,200,random_half,projection_half,0.985000,0.780000,0.996135,1.000000
+Fashion-MNIST,20,200,random_half,projection_zero,1.000000,0.990000,0.999872,1.000000
+Fashion-MNIST,21,100,lower_half,projection_diag,0.420000,0.370000,0.877755,1.000000
+Fashion-MNIST,21,100,lower_half,projection_half,0.530000,0.480000,0.912653,1.000000
+Fashion-MNIST,21,100,lower_half,projection_zero,0.600000,0.590000,0.930179,1.000000
+Fashion-MNIST,21,100,random_half,projection_diag,1.000000,0.980000,0.999796,1.000000
+Fashion-MNIST,21,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,21,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,21,200,lower_half,projection_diag,0.000000,0.000000,0.658559,1.000000
+Fashion-MNIST,21,200,lower_half,projection_half,0.010000,0.000000,0.709298,1.000000
+Fashion-MNIST,21,200,lower_half,projection_zero,0.260000,0.165000,0.829171,1.000000
+Fashion-MNIST,21,200,random_half,projection_diag,0.070000,0.010000,0.888240,1.000000
+Fashion-MNIST,21,200,random_half,projection_half,0.980000,0.750000,0.995038,1.000000
+Fashion-MNIST,21,200,random_half,projection_zero,1.000000,0.995000,0.999949,1.000000
+Fashion-MNIST,22,100,lower_half,projection_diag,0.390000,0.330000,0.866148,1.000000
+Fashion-MNIST,22,100,lower_half,projection_half,0.570000,0.510000,0.921556,1.000000
+Fashion-MNIST,22,100,lower_half,projection_zero,0.770000,0.770000,0.953469,1.000000
+Fashion-MNIST,22,100,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,22,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,22,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,22,200,lower_half,projection_diag,0.000000,0.000000,0.654592,1.000000
+Fashion-MNIST,22,200,lower_half,projection_half,0.000000,0.000000,0.692334,1.000000
+Fashion-MNIST,22,200,lower_half,projection_zero,0.235000,0.180000,0.813482,1.000000
+Fashion-MNIST,22,200,random_half,projection_diag,0.080000,0.005000,0.884987,1.000000
+Fashion-MNIST,22,200,random_half,projection_half,0.970000,0.805000,0.995051,1.000000
+Fashion-MNIST,22,200,random_half,projection_zero,1.000000,0.990000,0.999796,1.000000
+Fashion-MNIST,23,100,lower_half,projection_diag,0.310000,0.130000,0.879286,1.000000
+Fashion-MNIST,23,100,lower_half,projection_half,0.440000,0.250000,0.920561,1.000000
+Fashion-MNIST,23,100,lower_half,projection_zero,0.670000,0.490000,0.954949,1.000000
+Fashion-MNIST,23,100,random_half,projection_diag,1.000000,0.990000,0.999872,1.000000
+Fashion-MNIST,23,100,random_half,projection_half,1.000000,0.990000,0.999872,1.000000
+Fashion-MNIST,23,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,23,200,lower_half,projection_diag,0.000000,0.000000,0.666046,1.000000
+Fashion-MNIST,23,200,lower_half,projection_half,0.010000,0.005000,0.708673,1.000000
+Fashion-MNIST,23,200,lower_half,projection_zero,0.240000,0.155000,0.843724,1.000000
+Fashion-MNIST,23,200,random_half,projection_diag,0.050000,0.005000,0.879490,1.000000
+Fashion-MNIST,23,200,random_half,projection_half,0.990000,0.770000,0.995791,1.000000
+Fashion-MNIST,23,200,random_half,projection_zero,1.000000,0.975000,0.999681,1.000000
+Fashion-MNIST,24,100,lower_half,projection_diag,0.250000,0.210000,0.861582,1.000000
+Fashion-MNIST,24,100,lower_half,projection_half,0.400000,0.330000,0.904158,1.000000
+Fashion-MNIST,24,100,lower_half,projection_zero,0.500000,0.450000,0.930536,1.000000
+Fashion-MNIST,24,100,random_half,projection_diag,1.000000,0.920000,0.999031,1.000000
+Fashion-MNIST,24,100,random_half,projection_half,1.000000,0.980000,0.999643,1.000000
+Fashion-MNIST,24,100,random_half,projection_zero,1.000000,0.990000,0.999821,1.000000
+Fashion-MNIST,24,200,lower_half,projection_diag,0.000000,0.000000,0.644107,1.000000
+Fashion-MNIST,24,200,lower_half,projection_half,0.000000,0.000000,0.679579,1.000000
+Fashion-MNIST,24,200,lower_half,projection_zero,0.140000,0.090000,0.808712,1.000000
+Fashion-MNIST,24,200,random_half,projection_diag,0.095000,0.005000,0.891543,1.000000
+Fashion-MNIST,24,200,random_half,projection_half,0.980000,0.715000,0.994401,1.000000
+Fashion-MNIST,24,200,random_half,projection_zero,1.000000,0.950000,0.999464,1.000000
+Fashion-MNIST,25,100,lower_half,projection_diag,0.380000,0.340000,0.876505,1.000000
+Fashion-MNIST,25,100,lower_half,projection_half,0.510000,0.490000,0.913571,1.000000
+Fashion-MNIST,25,100,lower_half,projection_zero,0.610000,0.600000,0.934337,1.000000
+Fashion-MNIST,25,100,random_half,projection_diag,1.000000,0.990000,0.999770,1.000000
+Fashion-MNIST,25,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,25,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,25,200,lower_half,projection_diag,0.000000,0.000000,0.666875,1.000000
+Fashion-MNIST,25,200,lower_half,projection_half,0.015000,0.005000,0.708610,1.000000
+Fashion-MNIST,25,200,lower_half,projection_zero,0.300000,0.205000,0.841722,1.000000
+Fashion-MNIST,25,200,random_half,projection_diag,0.105000,0.005000,0.893610,1.000000
+Fashion-MNIST,25,200,random_half,projection_half,0.980000,0.730000,0.994311,1.000000
+Fashion-MNIST,25,200,random_half,projection_zero,1.000000,0.950000,0.999273,1.000000
+Fashion-MNIST,26,100,lower_half,projection_diag,0.310000,0.280000,0.848954,1.000000
+Fashion-MNIST,26,100,lower_half,projection_half,0.490000,0.460000,0.910816,1.000000
+Fashion-MNIST,26,100,lower_half,projection_zero,0.600000,0.600000,0.933597,1.000000
+Fashion-MNIST,26,100,random_half,projection_diag,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,26,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,26,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,26,200,lower_half,projection_diag,0.000000,0.000000,0.659031,1.000000
+Fashion-MNIST,26,200,lower_half,projection_half,0.010000,0.005000,0.695383,1.000000
+Fashion-MNIST,26,200,lower_half,projection_zero,0.250000,0.145000,0.820064,1.000000
+Fashion-MNIST,26,200,random_half,projection_diag,0.060000,0.010000,0.885918,1.000000
+Fashion-MNIST,26,200,random_half,projection_half,0.975000,0.765000,0.994974,1.000000
+Fashion-MNIST,26,200,random_half,projection_zero,1.000000,0.985000,0.999783,1.000000
+Fashion-MNIST,27,100,lower_half,projection_diag,0.340000,0.180000,0.887270,1.000000
+Fashion-MNIST,27,100,lower_half,projection_half,0.490000,0.310000,0.926403,1.000000
+Fashion-MNIST,27,100,lower_half,projection_zero,0.670000,0.530000,0.953597,1.000000
+Fashion-MNIST,27,100,random_half,projection_diag,1.000000,0.990000,0.999898,1.000000
+Fashion-MNIST,27,100,random_half,projection_half,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,27,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,27,200,lower_half,projection_diag,0.000000,0.000000,0.656607,1.000000
+Fashion-MNIST,27,200,lower_half,projection_half,0.005000,0.000000,0.695153,1.000000
+Fashion-MNIST,27,200,lower_half,projection_zero,0.255000,0.170000,0.831161,1.000000
+Fashion-MNIST,27,200,random_half,projection_diag,0.100000,0.005000,0.885408,1.000000
+Fashion-MNIST,27,200,random_half,projection_half,0.980000,0.790000,0.995918,1.000000
+Fashion-MNIST,27,200,random_half,projection_zero,1.000000,0.980000,0.999732,1.000000
+Fashion-MNIST,28,100,lower_half,projection_diag,0.420000,0.300000,0.894566,1.000000
+Fashion-MNIST,28,100,lower_half,projection_half,0.560000,0.460000,0.923546,1.000000
+Fashion-MNIST,28,100,lower_half,projection_zero,0.660000,0.620000,0.943240,1.000000
+Fashion-MNIST,28,100,random_half,projection_diag,1.000000,0.970000,0.999490,1.000000
+Fashion-MNIST,28,100,random_half,projection_half,1.000000,0.990000,0.999745,1.000000
+Fashion-MNIST,28,100,random_half,projection_zero,1.000000,1.000000,1.000000,1.000000
+Fashion-MNIST,28,200,lower_half,projection_diag,0.000000,0.000000,0.664094,1.000000
+Fashion-MNIST,28,200,lower_half,projection_half,0.005000,0.005000,0.701020,1.000000
+Fashion-MNIST,28,200,lower_half,projection_zero,0.190000,0.145000,0.804311,1.000000
+Fashion-MNIST,28,200,random_half,projection_diag,0.065000,0.000000,0.886913,1.000000
+Fashion-MNIST,28,200,random_half,projection_half,0.975000,0.530000,0.991531,1.000000
+Fashion-MNIST,28,200,random_half,projection_zero,1.000000,0.910000,0.998801,1.000000
+Fashion-MNIST,29,100,lower_half,projection_diag,0.330000,0.160000,0.878010,1.000000
+Fashion-MNIST,29,100,lower_half,projection_half,0.500000,0.370000,0.916709,1.000000
+Fashion-MNIST,29,100,lower_half,projection_zero,0.630000,0.570000,0.939821,1.000000
+Fashion-MNIST,29,100,random_half,projection_diag,1.000000,0.810000,0.997934,1.000000
+Fashion-MNIST,29,100,random_half,projection_half,1.000000,0.950000,0.999260,1.000000
+Fashion-MNIST,29,100,random_half,projection_zero,1.000000,0.980000,0.999694,1.000000
+Fashion-MNIST,29,200,lower_half,projection_diag,0.000000,0.000000,0.654324,1.000000
+Fashion-MNIST,29,200,lower_half,projection_half,0.000000,0.000000,0.684668,1.000000
+Fashion-MNIST,29,200,lower_half,projection_zero,0.170000,0.105000,0.789515,1.000000
+Fashion-MNIST,29,200,random_half,projection_diag,0.075000,0.000000,0.888431,1.000000
+Fashion-MNIST,29,200,random_half,projection_half,0.985000,0.675000,0.993801,1.000000
+Fashion-MNIST,29,200,random_half,projection_zero,1.000000,0.980000,0.999745,1.000000
