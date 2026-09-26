@@ -1,0 +1,28 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "pandas": "2.2.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "upstream": "908fd3d24cd92ec571ecb44383731e5948571a58",
+  "rust": "1.98.1 (48a229cea 2026-09-01)",
+  "bootstrap": "10000 resamples over memory-set seeds; paired differences",
+  "sha256": {
+    "research/results/confirm-2026-09-26/mnist.csv": "2858a5df5dc7b65141df0e1ea459ecbf0117818ff31cd179ca0da3884778ac74",
+    "research/results/confirm-2026-09-26/nearest.csv": "bf7a73458fd2ab8874a71b6f33e798897a637c3a825ba37eda20dba9f8d9b59c",
+    "research/results/legacy/test_energy_results.csv": "2013e99496603ea99f5c9e19449067e990394836f2aba0cc6c4b9c66ba16c664",
+    "research/results/legacy/test_noise_10_results.csv": "5381e0341703524e81761286b48c275b414615f7817fddfb91e49f336ca56add",
+    "research/results/legacy/low_load_test_results.csv": "2013e99496603ea99f5c9e19449067e990394836f2aba0cc6c4b9c66ba16c664",
+    "research/results/legacy/test_fixed_point_results.csv": "5425927696d204aba6138d665e7ecfff5c2dff21f871b5995ccbf1124ef8924a",
+    "research/results/legacy/test_async_vs_sync_results.csv": "86149ff0fcebdc9ea2c2ce23b8ac381908624530aede97bffc34e3a7f712b501",
+    "research/results/legacy/basic_drop_test_results.csv": "c0d94a895a5f11d4cd32d296bbcfa5ef8af068ecbe38ae1c80d3f20c1d995046",
+    "research/results/legacy/test_bit_vs_standart_equivalence.csv": "13ade64ff1c77914c472a5ba1d41d01dc594ac17ed5de37bb0442823799bddb8",
+    "research/results/run-2026-09-26/benchmark.csv": "bd7e40c0dd9571a57effd655ccaa5586c940f0d09dd85e2e930ca62e5ecf37cc",
+    "research/results/run-2026-09-26/mnist.csv": "10a9ddeb136ee8dc5449fed8216364752e8aece30d6e036744e803b16224ec40",
+    "research/results/run-2026-09-26/capacity_trace.csv": "81716ec2f7d70c3912b8a62074766e8c67c70009b9d5e2fc65735258b8d4f86d",
+    "research/results/run-2026-09-26/capacity.csv": "f47729288269f69490c71557d806c14c3b2112e13b509767988eba5b6e7f8c29",
+    "research/results/fashion-2026-09-26/mnist.csv": "dc52162d9ded412a3f72afd06995a3869197edf2b38ebb189208bf1709e084f7",
+    "research/results/fashion-2026-09-26/nearest.csv": "3f92ae16c8a22aa9f29d77a67ef8b35549cd06bc371e62c7592bf04cde2a7eca",
+    "hopfield/src/bin/research.rs": "b74ba3cd4dfb3513a099c5875836be0b39bf456190ef6e59d3db2c78e85c29f6",
+    "hopfield/tests/research_audit.rs": "466c177a0164331f7c3c3a52af111bcb7601691fa569b4de1d806c92e98aa547"
+  }
+}
