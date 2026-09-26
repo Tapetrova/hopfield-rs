@@ -1,1 +1,4 @@
 /target
+**/target/
+research/data/
+research/results/
