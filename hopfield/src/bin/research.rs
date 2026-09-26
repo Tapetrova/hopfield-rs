@@ -171,14 +171,50 @@ fn benchmark(dir: &Path) -> io::Result<()> {
     Ok(())
 }
 
+fn nearest_baseline(dir: &Path, data_path: &str) -> io::Result<()> {
+    let data = fs::read(data_path)?;
+    let be = |i| u32::from_be_bytes(data[i..i+4].try_into().unwrap()) as usize;
+    assert_eq!(be(0), 2051); assert_eq!(be(8),28); assert_eq!(be(12),28);
+    let count = be(4); let n = 784;
+    assert_eq!(data.len(),16+count*n);
+    let mut out = writer(dir,"nearest.csv","seed,k,mask,image_idx,source_idx,cue_matches,overlap,hidden_accuracy,exact_hidden")?;
+    for seed in 10..30_u64 {
+        let mut indices: Vec<_> = (0..count).collect();
+        indices.shuffle(&mut StdRng::seed_from_u64(10_000+seed));
+        for k in [100,200] {
+            let patterns: Vec<Vec<f64>> = indices[..k].iter().map(|&idx|
+                data[16+idx*n..16+(idx+1)*n].iter().map(|&v|if v>127 {1.0}else{-1.0}).collect()).collect();
+            for mask_kind in ["lower_half","random_half"] {
+                for mu in 0..k {
+                    let mut rng = StdRng::seed_from_u64(100_000+seed*1000+mu as u64);
+                    let mut order: Vec<_> = (0..n).collect();
+                    if mask_kind=="random_half" { order.shuffle(&mut rng); }
+                    // A noiseless visible cue contains the stored target, so
+                    // nearest visible Hamming distance is zero. Break ties by
+                    // storage order, without access to hidden target pixels.
+                    let matches: Vec<_> = (0..k).filter(|&j|
+                        order[..n/2].iter().all(|&i|patterns[j][i]==patterns[mu][i])).collect();
+                    let restored = &patterns[matches[0]];
+                    let errors = order[n/2..].iter().filter(|&&i|restored[i]!=patterns[mu][i]).count();
+                    let overlap = calculate_overlap(restored,&patterns[mu]);
+                    let accuracy = 1.0-errors as f64/(n/2) as f64;
+                    writeln!(out,"{seed},{k},{mask_kind},{mu},{},{},{overlap},{accuracy},{}",indices[mu],matches.len(),errors==0)?;
+                }
+            }
+        }
+    }
+    Ok(())
+}
+
 fn main() -> io::Result<()> {
     let args: Vec<_> = std::env::args().collect();
-    if args.len() < 3 { panic!("usage: research <capacity|mnist|benchmark> <output-directory> [MNIST IDX file]"); }
+    if args.len() < 3 { panic!("usage: research <capacity|mnist|mnist-confirm|mnist-baseline|benchmark> <output-directory> [MNIST IDX file]"); }
     let dir = Path::new(&args[2]); fs::create_dir_all(dir)?;
     match args[1].as_str() {
         "capacity" => capacity(dir),
         "mnist" => mnist(dir, args.get(3).expect("MNIST IDX path required"), false),
         "mnist-confirm" => mnist(dir, args.get(3).expect("MNIST IDX path required"), true),
+        "mnist-baseline" => nearest_baseline(dir, args.get(3).expect("MNIST IDX path required")),
         "benchmark" => benchmark(dir),
         _ => panic!("unknown experiment"),
     }
